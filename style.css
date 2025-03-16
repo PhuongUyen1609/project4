@@ -1,0 +1,214 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.pinyon-script-regular {
+    font-family: "Pinyon Script", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+.quicksand {
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+  }  
+body {
+    background: url('pictures/BG2.png') no-repeat center center fixed;
+    background-size: cover;
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    background-color: #f8f8f8;
+}
+
+.body-container {
+    max-width: 1200px;
+    margin: 52px auto 0px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9); /* Màu nền có độ trong suốt */
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #311702;
+    padding: 15px;
+    text-align: center;
+    z-index: 1000; /* Đảm bảo nằm trên background */
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 15px;
+    font-size: 18px;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+.content {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+
+#timeline-embed {
+    width: 100%;
+    height: 500px;
+    margin-top: 20px;
+}
+
+/* Định dạng cho trang Explore */
+.image-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.image-grid img {
+    width: 100%;
+    height: auto;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.image-grid img:hover {
+    transform: scale(1.1);
+}
+
+
+
+h1 {
+    color: #333;
+    font-family: "Montserrat", sans-serif;
+}
+
+.game-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    margin-top: 20px;
+}
+
+/* Khung Sources (dọc) */
+.source-container {
+    width: 200px;
+    background: white;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+#sources {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 cột */
+    grid-gap: 5px;
+}
+
+#sources img {
+    width: 100%;
+    height: auto;
+    cursor: grab;
+}
+
+/* Khung Picture (to hơn) */
+.puzzle-container {
+    width: 600px; /* Tăng kích thước */
+    height: 500px;
+    margin-left: 50px;
+    background: white;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+#puzzle {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 5px;
+    width: 100%;
+    height: 94%;
+}
+
+.dropzone {
+    width: 100%;
+    height: 100%;
+    border: 2px dashed #bbb;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Để tránh vỡ layout */
+    position: relative;
+}
+
+/* Khi drop vào, ảnh sẽ fit 100% */
+.dropzone img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Giữ nguyên tỉ lệ */
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.correct {
+    border: 2px solid green;
+}
+
+footer {
+    border-top: 3px solid black;
+    padding: 20px 15px;
+    text-align: left;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.footer-container {
+    max-width: 800px;
+    margin: auto;
+    color: black;
+}
+
+.footer-container h2 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.footer-container p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.footer-container a {
+    color: black;
+    text-decoration: none;
+}
+
+.footer-container a:hover {
+    text-decoration: underline;
+}
+
+.copyright {
+    font-size: 14px;
+    margin-top: 10px;
+}
+

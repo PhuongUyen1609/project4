@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.pinyon-script-regular {
+    font-family: "Pinyon Script", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+.quicksand {
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+  }  
+body {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    background-color: #f8f8f8;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #311702;
+    padding: 15px;
+    text-align: center;
+    z-index: 1000; /* Đảm bảo nằm trên background */
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 15px;
+    font-size: 18px;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+/* Background Image */
+.background {
+    width: 100%;
+    margin-top: 50px; /* Điều chỉnh theo độ cao navbar */
+}
+.background img {
+    width: 100%; /* Ảnh luôn bằng chiều rộng trang */
+    height: auto; /* Giữ nguyên tỷ lệ */
+    display: block; /* Loại bỏ khoảng trống dư thừa */
+}
+
+/* .background {
+    position: absolute; /* Giữ background cố định */
+/*    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh; /* Background luôn phủ kín */
+/*    background: url("pictures/BG.png") no-repeat center top;
+    background-size: cover;
+    z-index: -1;} */
+
+.image-grid-10 {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Chia thành 2 cột */
+    grid-template-rows: auto auto; /* Hàng tự điều chỉnh theo nội dung */
+    gap: 10px; /* Khoảng cách giữa các phần */
+    max-width: 800px;
+    margin: 20px auto;
+    align-items: center; /* Căn giữa nội dung */
+    padding-top: 50px; /* Đẩy grid xuống 50px */
+    position: relative;
+    z-index: 1; /* Đảm bảo nằm trên background */
+}
+
+.image-grid-10 img {
+    width: 100%;
+    height: auto; /* Giữ nguyên tỷ lệ ảnh */
+    object-fit: contain; /* Hiển thị full ảnh mà không bị cắt */
+}
+
+.image-grid-10 .large {
+    grid-column: 2;
+    grid-row: 2; /* Ảnh 2 chiếm 2 hàng để to hơn */
+}
+.image-grid-10 .large1 {
+    grid-column: 1;
+    grid-row: 1; /* Ảnh 2 chiếm 2 hàng để to hơn */
+}
+
+.image-grid-10 h1 {
+    grid-column: 2;
+    grid-row: 1;
+    font-size: 25px;
+    text-align: center;
+    padding: 30px;
+    display: flex;
+    text-align: left;
+    justify-content: center;
+    font-family: "Pinyon Script", cursive;
+}
+.image-grid-10 h2 {
+    grid-column: 1;
+    grid-row: 2;
+    font-size: 25px;
+    text-align: center;
+    padding: 30px;
+    display: flex;
+    text-align: left;
+    justify-content: center;
+    font-family: "Pinyon Script", cursive;
+}
+
+footer {
+    border-top: 3px solid black;
+    padding: 20px 15px;
+    text-align: left;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.footer-container {
+    max-width: 800px;
+    margin: auto;
+    color: black;
+}
+
+.footer-container h2 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.footer-container p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.footer-container a {
+    color: black;
+    text-decoration: none;
+}
+
+.footer-container a:hover {
+    text-decoration: underline;
+}
+
+.copyright {
+    font-size: 14px;
+    margin-top: 10px;
+}
