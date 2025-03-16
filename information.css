@@ -10,9 +10,8 @@
     font-weight: normal;
     font-style: normal;
 }
-
-h1,h2,h3,h4,h5,h6 {
-    font-weight: normal; /* hoặc 400 */
+h2,h3,h4,h5,h6 {
+    font-weight: normal; 
 }
 
 .pinyon-script-regular {
@@ -216,7 +215,6 @@ body {
     font-family: 'DFVN Guardilostra';
     margin: 10px 0;
     transform: translateY(-100px); /* Dịch lên 50px */
-    font-family: 'Montserrat', sans-serif;
 }
 
 
