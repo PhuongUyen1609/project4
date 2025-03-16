@@ -1,5 +1,5 @@
 // Kiểm tra nếu đang ở trang information.html thì mới chạy TimelineJS
-if (window.location.pathname.includes("information.html")) {
+if (window.location.pathname.includes("information.html")||window.location.pathname.includes("information")) {
     var timeline_json = {
         "title": {
             "text": {
